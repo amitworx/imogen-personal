@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+
+  a{
+    text-underline-offset: .2em;
+    transition: all .3s ease-in-out;
+    &:hover{
+        color: #4BFFFF;
+    }
+  }
+
+  

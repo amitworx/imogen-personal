@@ -1,0 +1,14 @@
+@mixin container($maxWidth:1400px, $padding:0 20px){
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $maxWidth;
+    padding:$padding;
+}
+
+
+
+// font mixin
+@mixin fontstyles($font-style : normal, $font-variant: normal, $font-weight : 400, $font-size: 16px, $line-height:24px,$font-family : $font-family-base,$font-color:#000 ){
+    font: $font-style $font-variant $font-weight  #{$font-size}/#{$line-height} unquote($font-family);
+    color: $font-color;
+}

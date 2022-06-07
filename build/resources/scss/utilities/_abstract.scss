@@ -1,0 +1,130 @@
+
+
+$list : 8 10 18; ; 
+
+@each $num  in $list 
+
+ // letter spacing classes
+ {
+    
+    .letter-spacing-#{$num} {
+        
+        // @media(min-width:900px){
+            letter-spacing: #{$num/10}rem;
+        // }
+    }
+
+ }
+
+
+
+
+ 
+$list : 1 2 3; ; 
+
+@each $num  in $list 
+
+ // line height classes
+ {
+     
+
+    .line-height-#{$num} {
+        line-height: #{$num}rem;
+    }
+
+ }
+
+
+
+
+
+// title__line
+
+// .title__line{
+//     width: 100%; 
+//    text-align: center; 
+//    border-bottom: 1px solid #fff; 
+//    line-height: 0;
+//    margin: 10px 0 20px; 
+//     span{
+//         background: transparent; 
+//         padding:0 10px; 
+//        // background-blend-mode: call($name: , $args: …);
+//         }
+    
+   
+// }
+
+.title__line {
+    overflow: hidden;
+    &::after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 90%;
+    left: 0.5em;
+    margin-right: -50%;
+  }
+}
+
+
+
+.creatio__columns-2{
+    columns: 2;
+}
+
+
+
+
+// flex
+.flex{
+    display: flex;
+    &-column{
+        flex-direction: column;
+    }
+    &-align-center{
+        align-items: center;
+    }
+    &-justify-center{
+        justify-content: center;
+    }
+} 
+
+
+
+.page__title{
+    letter-spacing: .8rem;
+}
+.section__home{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.has-creatio-white-color{
+    a,
+    a > span{
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: #4BFFFF;
+        }
+    }
+}
+
+.back__to-live-archive,
+.back__to-music,
+.back__to-blog{
+    a{
+        transition: all .3s ease-in-out;
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+            color: #4BFFFF;
+            svg path{
+                fill: #4BFFFF;
+            }
+        }
+    }
+}

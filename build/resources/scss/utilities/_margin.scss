@@ -1,0 +1,46 @@
+$list : 0 1 2 3 4 5 7 10 15 20 25 26 30 35 38 40 45 50 60 ; 
+
+@each $num  in $list 
+
+ // margin classes
+ {
+     
+  // marging top
+    .m-t-#{$num} {
+            margin-top: #{$num}rem;
+    }
+
+
+    // margin bottom
+    .m-b-#{$num} {
+        margin-bottom: #{$num}rem;
+    }
+
+  // margin desktop top
+  .md-t-#{$num} {
+    margin-top: #{$num}rem;
+    @media(min-width: 1200px) {
+        margin-top: #{$num}rem;
+    }
+  }
+
+  
+
+  // margin desktop bottom
+  .md-b-#{$num} {
+    margin-top: #{$num}rem;
+    @media(min-width: 1200px) {
+        margin-bottom: #{$num}rem;
+    }
+  }
+
+ }
+
+
+ .m-r-auto{
+     margin-right: auto;
+ }
+
+ .m-l-auto{
+     margin-left: auto;
+ }

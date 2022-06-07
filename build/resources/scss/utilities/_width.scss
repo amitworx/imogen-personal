@@ -1,0 +1,14 @@
+$list : 600 800 ; 
+
+@each $num  in $list 
+
+ // width classes
+ {
+  // marging top
+    .width-#{$num} {
+            max-width: #{$num}px;
+    }
+ }
+
+
+

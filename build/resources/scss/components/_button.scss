@@ -1,0 +1,29 @@
+.wp-block-button__link{
+    transition: all .3s ease-in-out;
+    font-size: 1.4rem;
+    font-family: $itc-avant-garde-gothic-std-bold;
+    line-height: 1.2;
+    padding: 13px 25px;
+    &.has-creatio-white-background-color{
+        &:hover{
+            background-color: #4BFFFF;
+        }
+    }
+    &.has-creatio-black-color{
+        color: #000;
+        &:hover{
+            color:#000;
+        }
+    }
+}
+
+
+
+
+.creatio__btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 20px;
+    background: #fff;
+    color:#000;
+}

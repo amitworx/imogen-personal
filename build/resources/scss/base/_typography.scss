@@ -1,0 +1,47 @@
+// fonts
+
+
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    overflow-x: hidden;    
+}
+
+body{
+    @include fontstyles($font-size: 1.6rem, $line-height:1.5);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+   margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+
+// fontstyles($font-style : normal, $font-variant: normal, $font-weight : 400, $font-size: 16px, $line-height:24px,$font-family : $font-family-base,$font-color:#000 )
+
+.has-itc-avant-garde-gothic-std-bold-22-font-size{
+    @include fontstyles($font-weight : 700, $font-size: 2.2rem, $line-height:1,$font-family : $itc-avant-garde-gothic-std-bold);
+}
+
+.has-itc-avant-garde-gothic-std-bold-24-font-size{
+    @include fontstyles($font-weight : 700, $font-size: 2.4rem, $line-height:1,$font-family : $itc-avant-garde-gothic-std-bold);
+}
+
+.has-itc-avant-garde-gothic-std-bold-28-font-size{
+    @include fontstyles($font-weight : 700, $font-size: 2.8rem, $line-height:1,$font-family : $itc-avant-garde-gothic-std-bold);
+}
+.has-itc-avant-garde-gothic-std-bold-52-font-size{
+     @include fontstyles($font-weight : 700, $font-size: 5.2rem, $line-height:1,$font-family : $itc-avant-garde-gothic-std-bold);
+}
+
+.has-itc-avant-garde-gothic-std-medium-10-font-size{
+    @include fontstyles( $font-size: 1rem, $line-height:1,$font-family : $itc-avant-garde-gothic-std-medium);
+}
+.has-itc-avant-garde-gothic-std-medium-17-font-size{
+    @include fontstyles( $font-size: 1.7rem, $line-height:1,$font-family : $itc-avant-garde-gothic-std-medium);
+}

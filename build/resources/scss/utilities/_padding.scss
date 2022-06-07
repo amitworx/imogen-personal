@@ -1,0 +1,24 @@
+$list : 0 2 3 5 7 10 15 20 25 26 30 35 38 40 45 50 60 ; 
+
+@each $num  in $list 
+
+ // padding classes
+ {
+     
+  // padding
+    .p-t-#{$num} {
+            padding-top: #{$num}rem;
+    }
+
+  // padding desktop top
+  .pd-t-#{$num} {
+    padding-top: #{$num}rem;
+  }
+
+
+  // padding desktop bottom
+  .pd-b-#{$num} {
+    padding-bottom: #{$num}rem;
+  }
+
+ }

@@ -1,0 +1,66 @@
+// color pallete
+
+:root {
+    --header-bg-color: #000;
+}
+
+
+
+
+
+
+
+// grid
+
+
+
+
+
+
+
+// font
+// @font-face {
+//     font-family: 'ITC-Avant-Garde-Gothic-Std-Bold';
+//     src: url('assets/fonts/ITC-Avant-Garde-Gothic-Std-Bold.otf') format('otf');
+// }
+
+// @font-face {
+//     font-family: 'ITC-Avant-Garde-Gothic-Std-Medium';
+//     src: url('assets/fonts/ITC-Avant-Garde-Gothic-Std-Medium.otf') format('otf');
+// }
+
+// @font-face {
+//     font-family: 'ITC-Avant-Garde-Gothic-Std-Medium-Oblique';
+//     src: url('assets/fonts/ITCAvantGardeStd-MdObl.otf') format('otf');
+// }
+
+$font-family-base: itcgothicstdmedium;
+
+
+$itc-avant-garde-gothic-std-medium: itcgothicstdmedium;
+$itc-avant-garde-gothic-std-medium-oblique: itcgothicstdmedobliq;
+$itc-avant-garde-gothic-std-bold: itcgothicstdbold;
+
+
+
+// spacing
+
+
+.header{
+    
+    --header-container-padding: 2rem;
+    --header-container-grid-gap: 1rem;
+}
+
+:root {
+    --wide-container-max-width: 1400px;
+    --narrow-container-max-width: 800px;
+   --container-width:1200px;
+}
+
+
+.footer{
+    --footer-container-grid-gap: 2rem;
+    --footer-social-icon-size : 2rem;
+    
+}
